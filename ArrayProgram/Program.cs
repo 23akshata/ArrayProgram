@@ -10,7 +10,7 @@ namespace ArrayProgram
     {
         static void Main(string[] args)
         { 
-            Console.WriteLine("1:ArrayLength \n 2.MinMaxNumbers");
+            Console.WriteLine("1:ArrayLength \n 2.MinMaxNumbers \n 3:SumOfArray");
             Console.WriteLine("Enter Your Choice:");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
@@ -25,6 +25,10 @@ namespace ArrayProgram
                     numbers.Numbers();
                     break;
 
+                case 3:
+                    SumOfArray sum = new SumOfArray();
+                    sum.Sum();
+                    break;
 
             }
             Console.ReadLine();
