@@ -10,7 +10,7 @@ namespace ArrayProgram
     {
         static void Main(string[] args)
         { 
-            Console.WriteLine("1:ArrayLength \n 2.MinMaxNumbers \n 3:SumOfArray \n 4:NegativeElements");
+            Console.WriteLine("1:ArrayLength \n 2.MinMaxNumbers \n 3:SumOfArray \n 4:NegativeElements \n 5:CountEachNumber");
             Console.WriteLine("Enter Your Choice:");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
@@ -33,6 +33,11 @@ namespace ArrayProgram
                 case 4:
                     NegativeElements elements = new NegativeElements();
                     elements.Negative();
+                    break;
+
+                case 5:
+                    CountEachNumber number = new CountEachNumber();
+                    number.Number();
                     break;
             }
             Console.ReadLine();
